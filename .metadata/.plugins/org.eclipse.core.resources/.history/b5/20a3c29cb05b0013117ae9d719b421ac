@@ -1,0 +1,18 @@
+Ti.UI.setBackgroundColor("green");
+
+var mainWindow = Titanium.UI.createWindow({
+	title: "My first window",
+	backgroundColor: "#ff0000",
+	backgroundImage: "LionKing.jpg",
+	id: "window1"
+});
+
+var headView = Ti.UI.createView({
+	backgroundColor: "#333",
+	borderRadius: 10,
+	//width: 110,
+	height: 50
+	
+})
+mainWindow.add(headView);
+mainWindow.open()

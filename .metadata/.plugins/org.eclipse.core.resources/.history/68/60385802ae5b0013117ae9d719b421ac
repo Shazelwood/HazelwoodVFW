@@ -1,0 +1,9 @@
+Ti.UI.setBackgroundColor("green");
+
+var mainWindow = Titanium.UI.createWindow({
+	title: "My first window",
+	backgroundColor: "#ff0000",
+	id: "window1"
+});
+
+mainWindow.open()

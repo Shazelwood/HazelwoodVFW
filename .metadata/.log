@@ -1,0 +1,210 @@
+!SESSION 2013-11-25 23:12:09.223 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/Hazelwood/Desktop/HazelwoodVFW -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-25 23:12:16.942
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.jobs 4 2 2013-11-25 23:34:03.161
+!MESSAGE An internal error occurred during: "Updating Android (This may take a while...)".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.mobile.android.AndroidSDKTools$AndroidUpdateJob.run(AndroidSDKTools.java:286)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2013-11-25 23:34:03.175
+!MESSAGE An internal error occurred during: "Installing/Updating a Mobile SDK...".
+!STACK 0
+java.lang.IllegalStateException: Job manager has been shut down.
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1104)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:427)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:436)
+	at com.aptana.portal.ui.dispatch.BrowserNotifier.notifyBrowserInUIThread(BrowserNotifier.java:282)
+	at com.appcelerator.titanium.mobile.ui.portal.actionController.MobileSDKActionController$2.run(MobileSDKActionController.java:286)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-11-25 23:34:03.413
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-11-25 23:34:15.468 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-25 23:34:26.138
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-25 23:35:40.366
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_errorUpdatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-25 23:35:40.366
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_noUpdateRequired in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-25 23:35:40.375
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_updatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-25 23:35:40.375
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_failedToUpdate in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-11-25 23:38:14.509
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-11-25 23:49:56.976 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-25 23:50:16.715
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:08:47.739
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_errorUpdatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:08:47.778
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_noUpdateRequired in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:08:47.778
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_updatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:08:47.779
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_failedToUpdate in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:49:13.195
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:49:13.201
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 00:50:47.820
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+!SESSION 2013-11-26 11:47:50.029 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-26 11:48:01.372
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-11-26 12:17:28.653
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-11-26 12:23:41.679 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-26 12:23:51.662
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 17:39:22.561
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_errorUpdatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 17:39:22.611
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_noUpdateRequired in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 17:39:22.614
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_updatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-26 17:39:22.661
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_failedToUpdate in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+!SESSION 2013-12-02 17:12:53.771 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-02 17:13:12.628
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 18:37:14.737
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 18:37:14.737
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 18:53:35.095
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 22:31:25.822
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_errorUpdatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 22:31:25.837
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_noUpdateRequired in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 22:31:25.837
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_updatingAndroid in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-02 22:31:25.837
+!MESSAGE NLS missing message: MobileSDKConfigurationProcessor_failedToUpdate in: com.appcelerator.titanium.mobile.ui.portal.processor.messages
+
+!ENTRY org.eclipse.core.resources 4 1 2013-12-02 22:36:31.574
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2013-12-02 22:36:31.574
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:923)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:904)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1663)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: The project description file (.project) for 'HazelwoodShae' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2013-12-02 22:36:31.575
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2013-12-02 22:36:31.575
+!MESSAGE The project description file (.project) for 'HazelwoodShae' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2013-12-02 22:36:31.575
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:923)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:904)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1663)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: The project description file (.project) for 'Window' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2013-12-02 22:36:31.575
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2013-12-02 22:36:31.576
+!MESSAGE The project description file (.project) for 'Window' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2013-12-02 22:36:31.576
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:923)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:904)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1663)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: The project description file (.project) for 'Views' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2013-12-02 22:36:31.576
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2013-12-02 22:36:31.576
+!MESSAGE The project description file (.project) for 'Views' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 2 2 2013-12-02 22:37:09.025
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-12-02 22:37:09.025
+!MESSAGE The project description file (.project) for 'HazelwoodShae' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-12-02 22:37:09.025
+!MESSAGE The project description file (.project) for 'Views' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-12-02 22:37:09.025
+!MESSAGE The project description file (.project) for 'Window' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
