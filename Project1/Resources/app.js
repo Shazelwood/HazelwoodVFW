@@ -22,78 +22,9 @@ var titleName = Ti.UI.createLabel({
 	
 });
 
-var text = Ti.UI.createView({
-	backgroundColor: "black",
-	borderColor: "white",
-	borderRadius: 20,
-	borderWidth: 1,
-	height: 100,
-	right: 5,
-	left: 5,
-});
 
-var changeText = Ti.UI.createLabel({
-	color: "white",
-	font: {fontSize: 16, fontFamily: "Helvetica"},
-	height: Ti.UI.SIZE,
-	left: 15,
-	right:15,
-	top: 5,
-	bottom: 5
-});
-
-var prev = Ti.UI.createView({
-	backgroundColor: "black",
-	borderColor: "white",
-	borderWidth: 3,
-	height: Ti.UI.SIZE,
-	right: 200,
-	left: 5,
-	bottom: 10
-
-});
-
-var next = Ti.UI.createView({
-	backgroundColor: "black",
-	borderColor: "white",
-	borderWidth: 3,
-	height: Ti.UI.SIZE,
-	left: 200,
-	right: 5,
-	bottom: 10
-
-});
-
-var nextText = Ti.UI.createLabel({
-	text: "next",
-	color: "white",
-	font: {fontSize: 20, fontFamily: "Helvetica"},
-	height: Ti.UI.SIZE,
-	left: 35,
-	right:35,
-	top: 5,
-	bottom: 5
-});
-
-var prevText = Ti.UI.createLabel({
-	text: "previous",
-	color: "white",
-	font: {fontSize: 20, fontFamily: "Helvetica"},
-	height: Ti.UI.SIZE,
-	left: 15,
-	right:15,
-	top: 5,
-	bottom: 5
-});
-
-var albums = ["Kaya", "Exodus", "Uprising", "Burnin", "Rastaman Vibration", "Songs of Freedom", "Rasta Revolution", "Grooving Kingston 12"];
+require ("Require");
 
 title.add(titleName);
-prev.add(prevText);
-next.add(nextText);
-text.add(changeText);
-mainWindow.add(text);
-mainWindow.add(prev);
-mainWindow.add(next);
 mainWindow.add(title);
 mainWindow.open();

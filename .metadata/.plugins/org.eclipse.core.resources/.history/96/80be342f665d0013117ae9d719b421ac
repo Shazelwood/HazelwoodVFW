@@ -1,0 +1,28 @@
+var albums = ["Kaya", "Exodus", "Uprising", "Burnin", "Rastaman Vibration", "Songs of Freedom", "Rasta Revolution", "Grooving Kingston 12"];
+
+var funcNext = function(next){
+	/*for (var i = 0; i<albums.length; i++){
+		changeText.text = albums[i];
+	}*/
+	var i = 0;
+	if (i === (albums.length - 1)){
+		i = 0;
+		changeText.text = i + albums[i];
+	}else {
+		i++
+		changeText.text = i + albums[i];
+	}
+	
+	
+	
+};
+
+var funcPrev = function(prev){
+	/*for (var i = 0; i<albums.length; i--){
+		changeText.text = albums[i];
+	}*/
+};
+
+
+next.addEventListener("click", funcNext);
+prev.addEventListener("click", funcPrev);

@@ -1,0 +1,81 @@
+var increment = function(){
+	if(progressBar.value < 95){
+		randomView.backgroundColor = "red";
+		//change value of bar
+		progressBar.fireEvent("update", {value: 10});
+		//moving the box
+		var maxLeft = Ti.Platform.displayCaps.platforemWidth - randomView.width;
+		var maxTop = Ti.Platform.displayCaps.platforemWidth - randomView.width;
+		randomView.left = Math.random() * Ti.Platform.displayCaps.platformWidth;
+		randomView.top = Math.random() * Ti.Platform.displayCaps.platformHeight;
+		if (randomView.left > maxLeft){
+			randomView.left = maxLeft;
+		}
+		else if (randomView.top > maxTop){
+			randomView.Top = maxTop;
+		}
+	}
+	else{
+		//complete the game
+		Ti.App.fireEvent("complete");
+		alert("You've failed to stop the progressbar");
+	}
+};
+
+var timer = setInterval(increment, 1000 ); //miliseconds (1,000 = 1 sec)
+
+var window = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+	
+	
+});
+
+var progressBar = Ti.UI.createProgressBar({
+	min: 0,
+	max: 100,
+	value: 30,
+	message: "Can you stop the progress?",
+	width: "70%"
+});
+
+var randomView = Ti.UI.createView({
+	width: "10%",
+	height: "10%",
+	backgroundColor: "red",
+	borderColor: "black"
+	
+});
+progressBar.addEventListener("update", function(event){
+	progressBar.value = progressBar.value + event.value;
+	
+});
+
+Ti.App.addEventListener("complete", function(){
+	progressBar.hide();
+	clearInterval(timer);
+	progressBar = null;
+	randomView.hide();
+	randomView = null;
+});
+var decrement = function(){
+	if(progressBar.value <= 5){
+		// user wins
+		Ti.App.fireEvent("complete");
+		alert("You stopped the progress bar!");
+		
+	}
+	else{
+		//updates the value
+		randomView.backgroundColor = "green";
+		progressBar.fireEvent("update", {value: -10});
+
+		
+	}
+	
+};
+randomView.addEventListener("click", decrement);
+
+window.add(randomView);
+window.add(progressBar);
+progressBar.show();
+window.open();

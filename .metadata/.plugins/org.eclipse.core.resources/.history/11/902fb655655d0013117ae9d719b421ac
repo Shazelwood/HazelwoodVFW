@@ -1,0 +1,24 @@
+var funcNext = function(next){
+	/*for (var i = 0; i<albums.length; i++){
+		changeText.text = albums[i];
+	}*/
+	var i = 0;
+	if(albums.length>i){
+		changeText.text = albums[i];
+		i++;
+		funcNext();
+	}
+	
+	
+	
+};
+
+var funcPrev = function(prev){
+	/*for (var i = 0; i<albums.length; i--){
+		changeText.text = albums[i];
+	}*/
+};
+
+
+next.addEventListener("click", funcNext);
+prev.addEventListener("click", funcPrev);

@@ -1,0 +1,30 @@
+var increment = function(){
+	
+	
+};
+
+var window = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+	
+	
+});
+
+var progressBar = Ti.UI.createProgressBar({
+	min: 0,
+	max: 100,
+	value: 30,
+	message: "Can you stop the progress?",
+	width: "70%"
+});
+
+var randomView = Ti.UI.createView({
+	width: "10%",
+	height: "10%",
+	backgroundColor: "red",
+	borderColor: "black"
+	
+});
+window.add(randomView);
+window.add(progressBar);
+progressBar.show();
+window.open();
