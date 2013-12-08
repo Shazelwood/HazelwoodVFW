@@ -1,0 +1,16 @@
+//require("BillionairesJSON");
+var mainWindow = Ti.UI.createWindow({
+	title: "Billionaires"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window:  mainWindow
+	
+});
+
+
+//Data
+
+
+navWindow.open();
+

@@ -9,4 +9,14 @@
 		<item value="org.eclipse.platform:3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q"/>
 		<item value="org.eclipse.rcp:3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="225" key="DIALOG_Y_ORIGIN"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="480" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="com.aptana.ui.dialogs.ProjectContentsLocationArea">
+		<item value="/Users/Hazelwood/Desktop/Applications/ManiiCan" key="OUTSIDE_LOCATION"/>
+	</section>
 </section>

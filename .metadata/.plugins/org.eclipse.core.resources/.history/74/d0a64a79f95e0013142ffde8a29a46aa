@@ -1,0 +1,36 @@
+var myJSONObject = { 
+	"RTS": {
+	
+	"billionaires" : [
+	{
+		"name": "Carlos Slim Helu",
+		"country": "Mexico",
+		"money":"$73 Billion",
+		"business": "Telecom"
+	},
+	{
+		"name": "Bill Gates",
+		"country": "U.S.",
+		"money":"$67 Billion",
+		"business":"Microsoft"
+	},
+	{
+		"name":"Amancio Ortega",
+		"country": "Spain",
+		"money":"$57 Billion",
+		"business":"Zara"
+	},
+	{
+		"name": "Warren Buffet",
+		"country": "U.S.",
+		"money": "$53.5 Billion",
+		"business":"Berkshire Hathaway"
+	},
+	{
+		"name":"Larry Ellison",
+		"country": "U.S.",
+		"money":"$43 Billion",
+		"business":"Oracle"
+	},
+
+]}};

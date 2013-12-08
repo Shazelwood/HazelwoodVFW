@@ -237,3 +237,31 @@ Contains: The project description file (.project) for 'Views' is missing.  This 
 !MESSAGE Errors occurred while refreshing resources with the local file system.
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2013-12-04 23:50:18.322
 !MESSAGE The project description file (.project) for 'HazelwoodShae' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2013-12-06 15:24:58.413 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-06 15:27:13.739
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-06 15:27:25.656
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-06 15:27:25.656
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-06 15:27:38.865
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-06 23:13:06.328
+!MESSAGE Extension version: 3.1.3.GA; protocol v2
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-06 23:13:06.338
+!MESSAGE Extension update available: 3.1.3.GA
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-06 23:36:45.815
+!MESSAGE Extension version: 3.1.3.GA; protocol v2
