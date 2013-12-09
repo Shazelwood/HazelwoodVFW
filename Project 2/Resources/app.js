@@ -1,5 +1,5 @@
 var mainWindow = Ti.UI.createWindow({
-	title: "Billionaires"
+	title: "Succesful People"
 });
 
 require("Billionaires");

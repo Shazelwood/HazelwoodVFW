@@ -1,0 +1,72 @@
+var mainWindow = Ti.UI.createWindow();
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow
+	
+});
+
+//Data
+var myData = {
+	"fruits": {
+		"headerTitle": "Fruits",
+		"footerTitle": "Buy some fruit.",
+		"rowData": [
+			{title: "Apples" , desc: "Red Apple"},
+			{title: "Bananas", desc: "Yellow Banana"}
+		]
+		
+	},
+	"veggies":{
+		"headerTitle": "Veggies",
+		"footerTitle": "Buy some vegetables.",
+		"rowData": [
+			{title: "Tomato" , desc: "Red tomato"},
+			{title: "Squash", desc: "Yellow squash"}
+		]
+	}
+	
+};
+
+//Table
+var table = Ti.UI.createTableView({
+	style: Ti.UI. iPhone.TableViewStyle.GROUPED
+});
+
+//getDetail function
+var getDetail = funtion(){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "#fff",
+		title: this.title
+		
+	});
+	var detailText = Ti.UI.createLabel({
+		text: this.desc,
+		font: {fontSize: 18, fontFamily: "Arial"}
+		
+	});
+	detailWindow.add(detailText);
+	navWindow.openWindow(detailWindow, {animate: true});	
+};
+
+var theSections = [];
+//Get the Data, create UI components
+for(var n in myData){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: myData[n].headerTitle,
+		footerTitle: myData[n].footerTitle
+	});
+	for(var i = 0, j = myData[n].rowData.length; i<j; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: myData[n].rowData[i].title,
+			desc: myData[n].rowData[i].desc,
+			hasChild: true
+		});
+		tableSection.add(theRow);
+	}
+	theSections.push(tableSection);
+	theRow.addEventListener("click", getDetail);
+}
+
+table.setData(theSections);
+
+mainWindow.add(table);
+navWindow.open();

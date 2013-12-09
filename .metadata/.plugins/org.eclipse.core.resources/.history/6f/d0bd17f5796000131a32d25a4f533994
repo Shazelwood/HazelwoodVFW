@@ -1,0 +1,125 @@
+/*var myJSONObject = { 
+	"RTS": {
+		"billionaires" : [
+			{
+				"name": "Carlos Slim Helu",
+				"country": "Mexico",
+				"money":"$73 Billion",
+				"business": "Telecom"
+			},
+			{
+				"name": "Bill Gates",
+				"country": "U.S.",
+				"money":"$67 Billion",
+				"business":"Microsoft"
+			},
+			{
+				"name":"Amancio Ortega",
+				"country": "Spain",
+				"money":"$57 Billion",
+				"business":"Zara"
+			},
+			{
+				"name": "Warren Buffet",
+				"country": "U.S.",
+				"money": "$53.5 Billion",
+				"business":"Berkshire Hathaway"
+			},
+			{
+				"name":"Larry Ellison",
+				"country": "U.S.",
+				"money":"$43 Billion",
+				"business":"Oracle"
+			}
+		]
+	}
+};*/
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window:  mainWindow
+});
+
+var myData = {
+	"billionaires": {
+		"headerTitle": "Billionaires",
+		"footerTitle": "Billionaires",
+		"rowData": [
+			{title: "Carlos Slim Helu", country: "Mexico", money: "$73 Billion", business: "Telecom"},
+			{title: "Bill Gates", country: "U.S.", money: "$67 Billion", business: "Microsoft"},
+			{title: "Amancio Ortega", country: "Spain", money: "$57 Billion", business: "Zara"},
+			{title: "Warren Buffet", country: "U.S.", money: "$53.5 Billion", business: "Berkshire Hathaway"},
+			{title: "Larry Ellison", country: "U.S.", money: "$43 Billion", business: "Oracle"},
+		]
+	},
+	"Hip Hop millionaires": {
+		"headerTitle": "Millionaires",
+		"footerTitle": "Millionaires",
+		"rowData": [
+			{title: "Diddy", country: "U.S.", money: "$50 Million", business: "Producer"},
+			{title: "Jay Z", country: "U.S.", money: "$43 Million", business: "Producer/Rapper"},
+			{title: "Dr. Dre", country: "U.S.", money: "$40 Million", business: "Producer"},
+			{title: "Nicki Minaj", country: "U.S.", money: "$29 Million", business: "Rapper/Singer"},
+			{title: "Birdman", country: "U.S.", money: "$21 Million", business: "CEO/Rapper"},
+		]
+	},
+	
+};
+
+var table = Titanium.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+	
+});
+
+/*var billSect = Ti.UI.createTableViewSection({
+	headerTitle: "Top 5 Billionaires",
+	footerTitle: "Top 5 Billionaires"
+	
+});*/
+//set TableViewSection to the table
+// setData can only accept array data types
+
+//var tableSections = [billSect];
+
+
+var getDetail = function(){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "white",
+		title: this.title
+	
+	});
+	var detailLabel = Ti.UI.createLabel({
+		text: this.title +" from " + this.country +  " made his money from " + this.business + ". Their networth is worth " + this.money +"",
+		font: {fontSize: 18, fontFamily: "Arial"}
+	});
+	detailWindow.add(detailLabel);
+	navWindow.openWindow(detailWindow, {animate: true});
+};
+
+
+var theSections = [];
+//create TableViewRows
+for(var n in myData){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: myData[n].headerTitle,
+		footerTitle: myData[n].footerTitle
+	});
+	for ( var i = 0, j = myData[n].rowData.length; i < j ; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title: myData[n].rowData[i].title,
+		country: myData[n].rowData[i].country,
+		money: myData[n].rowData[i].money,
+		business: myData[n].rowData[i].business,
+		hasChild: true
+	});
+	theSections.push(tableSection);
+	theRow.addEventListener("click", getDetail);
+	
+	};
+	tableSection.add(theRow);
+	
+}
+
+table.setData(theSections);
+
+mainWindow.add(table);
+navWindow.open();
+

@@ -1,0 +1,24 @@
+var mainWindow = Ti.UI.createWindow();
+
+//Create ListView
+var listView = Ti.Ui.createListView({
+	backgroundColor: "#fff"
+});
+
+//Create a listViewSection
+var cars = Ti.UI.createListSection({
+	headerTitle: "Cars""
+});
+
+//Data
+var carsData = [
+	{properties: {title: "Mazda", image: "mazda.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK}},
+	{properties: {title: "BMW", image: "bmw.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK}}
+];
+
+cars.setData(carsData);
+listView.sections = [cars];
+
+
+mainWindow.add(listView);
+mainWindow.open();
