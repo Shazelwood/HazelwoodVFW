@@ -123,7 +123,7 @@ table.addEventListener("click", function(event){
  });
   	var detailLabel = Ti.UI.createLabel({
 		text: event.source.title +" from " + event.source.country +  " made his/her money from " + event.source.business + ". Their networth is worth " + event.source.money +"",
-		font: {fontSize: 18, fontFamily: "Arial"},
+		font: {fontSize: 18, fontFamily: "Oldenburg"},
 		top: 250
 	});
 	detailWindow.add(pic);

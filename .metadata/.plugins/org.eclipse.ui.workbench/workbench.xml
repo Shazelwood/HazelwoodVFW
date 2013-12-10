@@ -38,7 +38,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="com.aptana.editor.js" name="Billionaires.js" partName="Billionaires.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project 2/Resources/Billionaires.js" title="Billionaires.js" tooltip="Project 2/Resources/Billionaires.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project 2/Resources/Billionaires.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2695" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3565" selectionTopPixel="1517"/>
 </editor>
 <editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project 2/Resources/app.js" title="app.js" tooltip="Project 2/Resources/app.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project 2/Resources/app.js"/>
@@ -57,14 +57,10 @@
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="Testing123">
-<project name="ManIICan">
-<selection>
-<element path="/Testing123"/>
+<project name="ManIICan">&#x0A;<selection>&#x0A;<element path="/Testing123"/>
 </selection>
 </project>
-<project name="Testing123">
-<selection>
-<element path="/Testing123"/>
+<project name="Testing123">&#x0A;<selection>&#x0A;<element path="/Testing123"/>
 </selection>
 </project>
 </viewState>
@@ -73,7 +69,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
+<perspectives activePart="com.aptana.editor.js" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.appcelerator.titanium.ui.perspectives.TitaniumStudioPerspectiveFactory" id="com.appcelerator.titanium.ui.StudioPerspective" label="Studio"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -171,22 +167,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/app.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/Require.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project 2/Resources/app.js"/>
 </editors>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2709" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="1043" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3730" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3287" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3274" y="0"/>
-</item>
 <item historyLabel="Billionaires.js" index="1">
 <position info="not_deleted" x="3332" y="0"/>
 </item>
@@ -319,8 +301,23 @@
 <item historyLabel="app.js" index="2">
 <position info="not_deleted" x="63" y="0"/>
 </item>
-<item active="true" historyLabel="Billionaires.js" index="1">
+<item historyLabel="Billionaires.js" index="1">
 <position info="not_deleted" x="2112" y="0"/>
+</item>
+<item historyLabel="app.js" index="6">
+<position info="not_deleted" x="63" y="0"/>
+</item>
+<item historyLabel="Billionaires.js" index="1">
+<position/>
+</item>
+<item historyLabel="Billionaires.js" index="1">
+<position info="not_deleted" x="3857" y="0"/>
+</item>
+<item historyLabel="Billionaires.js" index="1">
+<position info="not_deleted" x="3859" y="0"/>
+</item>
+<item active="true" historyLabel="Billionaires.js" index="1">
+<position info="not_deleted" x="3235" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -328,10 +325,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="bottomLeft"/>
-<trimItem IMemento.internal.id="leftArea"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -340,7 +333,6 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
-<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
@@ -386,9 +378,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="December 8/Resources/app.js">
 <persistable path="/December 8/Resources/app.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="December6/Resources/app.js">
-<persistable path="/December6/Resources/app.js"/>
 </file>
 </mruList>
 </workbench>

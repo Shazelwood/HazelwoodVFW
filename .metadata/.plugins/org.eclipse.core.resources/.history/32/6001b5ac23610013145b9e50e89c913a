@@ -80,9 +80,27 @@ var table = Titanium.UI.createTableView({
 //var tableSections = [billSect];
 
 
-
-//win.add(pic);
-	
+var getDetail = function(){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "white",
+		title: this.title
+		});
+	//var win = Ti.UI.createView();
+	var pic =  Ti.UI.createImageView({
+		height: 200,
+		top: 20,
+  		image: this.image
+});
+//win.add(image);
+	var detailLabel = Ti.UI.createLabel({
+		text: this.title +" from " + this.country +  " made his/her money from " + this.business + ". Their networth is worth " + this.money +"",
+		font: {fontSize: 18, fontFamily: "Arial"},
+		top: 250
+	});
+	detailWindow.add(pic);
+	detailWindow.add(detailLabel);
+	navWindow.openWindow(detailWindow, {animate: true});
+};
 
 
 var theSections = [];
@@ -104,33 +122,11 @@ for(var n in myData){
 	
 	
 	tableSection.add(theRow);
-	//theRow.addEventListener("click", getDetail);
+	theRow.addEventListener("click", getDetail);
 	};
 	theSections.push(tableSection);
 	
 }
-//source property holds the properties of the Row. 
-table.addEventListener("click", function(event){
-	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: "white",
-		title: event.source.title
-		});
-	//var win = Ti.UI.createView();
-	var pic =  Ti.UI.createImageView({
-		height: 200,
-		top: 20,
-  		image: event.source.image
- });
-  	var detailLabel = Ti.UI.createLabel({
-		text: event.source.title +" from " + event.source.country +  " made his/her money from " + event.source.business + ". Their networth is worth " + event.source.money +"",
-		font: {fontSize: 18, fontFamily: "Arial"},
-		top: 250
-	});
-	detailWindow.add(pic);
-	detailWindow.add(detailLabel);
-	navWindow.openWindow(detailWindow, {animate: true});
-
-});
 
 table.setData(theSections);
 
