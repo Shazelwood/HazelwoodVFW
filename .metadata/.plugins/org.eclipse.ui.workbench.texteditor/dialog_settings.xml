@@ -5,10 +5,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="for(" key="selection"/>
+		<item value="http://www.arts-wallpapers.com/desktop_wallpapers/fashion/louis_vuitton/images/wallpaper_12357.jpg" key="selection"/>
 		<list key="findhistory">
-			<item value="for("/>
-			<item value="for"/>
+			<item value="http://www.arts-wallpapers.com/desktop_wallpapers/fashion/louis_vuitton/images/wallpaper_12357.jpg"/>
+			<item value="&quot;http://1.bp.blogspot.com/_wV5JMD1OISg/TDYTYxuxR4I/AAAAAAAAvSo/a0zT8nwPV8U/s1600/louis-vuitton-nice-beautiful.jpg&quot;"/>
+			<item value="65"/>
+			<item value="red"/>
+			<item value="navigation"/>
+			<item value="rich note"/>
+			<item value="viewContainer"/>
+			<item value="openGallery"/>
 		</list>
 	</section>
 </section>

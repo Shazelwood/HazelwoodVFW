@@ -1,0 +1,7 @@
+var mainWindow = Ti.UI.createWindow({
+	title: "Billionaire Gallery",
+	backgroundColor: "#f2f2f2"
+});
+
+Ti.include("/Gallery.js");
+mainWindow.open();

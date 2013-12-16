@@ -112,7 +112,8 @@ for(var n in myData){
 //source property holds the properties of the Row. 
 table.addEventListener("click", function(event){
 	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: "white",
+		backgroundColor: "e0d1bf",
+		barColor: "e9a555",
 		title: event.source.title
 		});
 	//var win = Ti.UI.createView();

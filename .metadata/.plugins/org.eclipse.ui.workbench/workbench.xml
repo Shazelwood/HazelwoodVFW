@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="878" width="1398" x="5" y="22">
+<window height="878" width="1398" x="7" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -32,17 +32,18 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.js" name="Billionaires.js" partName="Billionaires.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project 2/Resources/Billionaires.js" title="Billionaires.js" tooltip="Project 2/Resources/Billionaires.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project 2/Resources/Billionaires.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3565" selectionTopPixel="1517"/>
+<editor id="com.aptana.editor.js" name="Gallery.js" partName="Gallery.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project3/Resources/Gallery.js" title="Gallery.js" tooltip="Project3/Resources/Gallery.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project3/Resources/Gallery.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="122" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project 2/Resources/app.js" title="app.js" tooltip="Project 2/Resources/app.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project 2/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="63" selectionTopPixel="0"/>
+<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/Hazelwood/Desktop/HazelwoodVFW/Project3/Resources/app.js" title="app.js" tooltip="Project3/Resources/app.js" workbook="org.eclipse.ui.internal.EditorStack@cedb25">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Project3/Resources/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="93" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -60,16 +61,13 @@
 <project name="ManIICan">&#x0A;<selection>&#x0A;<element path="/Testing123"/>
 </selection>
 </project>
-<project name="Testing123">&#x0A;<selection>&#x0A;<element path="/Testing123"/>
-</selection>
-</project>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.editor.js" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
+<perspectives activePart="com.appcelerator.titanium.ui.browser.dashboard" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.appcelerator.titanium.ui.perspectives.TitaniumStudioPerspectiveFactory" id="com.appcelerator.titanium.ui.StudioPerspective" label="Studio"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -128,7 +126,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="leftArea"/>
+<info part="org.eclipse.ui.editorss" ratio="0.24513339" ratioLeft="340" ratioRight="1047" relationship="2" relative="leftArea"/>
 <info folder="true" part="terminalArea" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
@@ -159,167 +157,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/December 8/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project 2/Resources/Billionaires.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project 2/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/Require.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project1/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Project 2/Resources/app.js"/>
-</editors>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3332" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3354" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="1043" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3212" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="1231" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3693" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="1369" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3610" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3422" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="817" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="820" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2233" y="0"/>
-</item>
-<item historyLabel="app.js | Project 2" index="2">
-<position/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2233" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="618" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2750" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="776" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3045" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="908" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3064" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="930" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2597" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="930" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3753" y="0"/>
-</item>
-<item historyLabel="app.js" index="3">
-<position/>
-</item>
-<item historyLabel="Require.js" index="4">
-<position/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3753" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3005" y="0"/>
-</item>
-<item historyLabel="Require.js" index="4">
-<position/>
-</item>
-<item historyLabel="app.js" index="3">
-<position/>
-</item>
-<item historyLabel="Require.js" index="4">
-<position/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3005" y="0"/>
-</item>
-<item historyLabel="app.js" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position/>
-</item>
-<item historyLabel="Require.js" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="app.js" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Require.js" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3507" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2739" y="0"/>
-</item>
-<item historyLabel="app.js" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2112" y="0"/>
-</item>
-<item historyLabel="app.js" index="2">
-<position info="not_deleted" x="63" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="2112" y="0"/>
-</item>
-<item historyLabel="app.js" index="6">
-<position info="not_deleted" x="63" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3857" y="0"/>
-</item>
-<item historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3859" y="0"/>
-</item>
-<item active="true" historyLabel="Billionaires.js" index="1">
-<position info="not_deleted" x="3235" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -337,23 +175,32 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Project 2/Resources/app.js">
-<persistable path="/Project 2/Resources/app.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Project1/Resources/app.js">
-<persistable path="/Project1/Resources/app.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="amancio.jpg" tooltip="Project 2/Resources/Money/amancio.jpg">
-<persistable path="/Project 2/Resources/Money/amancio.jpg"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="Billionaires.js" tooltip="Project 2/Resources/Billionaires.js">
+<persistable path="/Project 2/Resources/Billionaires.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="Require.js" tooltip="Project1/Resources/Require.js">
 <persistable path="/Project1/Resources/Require.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="Billionaires.js" tooltip="Project 2/Resources/Billionaires.js">
-<persistable path="/Project 2/Resources/Billionaires.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Project1/Resources/app.js">
+<persistable path="/Project1/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Project3/Resources/app.js">
+<persistable path="/Project3/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="Gallery.js" tooltip="Project3/Resources/Gallery.js">
+<persistable path="/Project3/Resources/Gallery.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Project 2/Resources/app.js">
+<persistable path="/Project 2/Resources/app.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.json" name="Billionaires.json" tooltip="Project 2/Resources/Billionaires.json">
 <persistable path="/Project 2/Resources/Billionaires.json"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="Project3/tiapp.xml">
+<persistable path="/Project3/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="amancio.jpg" tooltip="Project 2/Resources/Money/amancio.jpg">
+<persistable path="/Project 2/Resources/Money/amancio.jpg"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="ManIICan/Resources/app.js">
 <persistable path="/ManIICan/Resources/app.js"/>
@@ -363,21 +210,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Testing123/Resources/app.js">
 <persistable path="/Testing123/Resources/app.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="List Views/tiapp.xml">
-<persistable path="/List Views/tiapp.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="List Views/Resources/app.js">
-<persistable path="/List Views/Resources/app.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="List views" tooltip="December 8/Resources/List views">
-<persistable path="/December 8/Resources/List views"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="December 8/tiapp.xml">
-<persistable path="/December 8/tiapp.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="December 8/Resources/app.js">
-<persistable path="/December 8/Resources/app.js"/>
 </file>
 </mruList>
 </workbench>

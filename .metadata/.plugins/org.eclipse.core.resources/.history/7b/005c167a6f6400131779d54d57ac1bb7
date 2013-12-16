@@ -1,0 +1,76 @@
+var firstWindow = Ti.UI.createWindow({
+	backgroundColor: "#F2F2F2",
+	title: "Billionaire Gallery"
+	
+});
+var openButton = Ti.UI.createView({
+	backgroundColor: "#F2F2F2",
+	borderColor: "white",
+	borderRadius: 20,
+	borderWidth: 1,
+	height: 100,
+	right: 5,
+	left: 5
+});
+var textGal = Ti.UI.createLabel({
+	text: "Open Gallery",
+	color: "red"
+});
+var scrollView = Ti.UI.createScrollView({
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	contentWidth: 315
+});
+
+
+
+openButton.addEventListener("click", function(){
+	var navWindow = Ti.UI.iOS.createNavigationWindow({
+		backgroundColor: "red", 
+		window: firstWindow
+	});
+	
+	var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Money");
+	var folderContents = gallery.getDirectoryListing();
+
+	var numberOfViews = folderContents.length;
+
+	for(var i = 0; i < numberOfViews; i++){
+		var newView = Ti.UI.createView({
+			title: "Billionaire Gallery",
+			backgroundColor: "#333",
+			width: 100,
+			height: 100,
+			top: 5,
+			left: 5,
+		});
+		var pictures = Ti.UI.createImageView({
+			image: "Money/" + folderContents[i],
+			width: 150
+		});
+		newView.add(pictures);
+		scrollView.add(newView);
+		
+		newView.addEventListener("click", function(e){
+			var imageWindow = Ti.UI.createWindow({
+				title: e.source.image,
+				backgroundImage: e.source.image
+				});
+			scrollWindow.close();
+			navWindow.openWindow(imageWindow, {animate: true});
+		});
+
+	};
+	var scrollWindow = Ti.UI.createView({
+	backgroundColor: "#f2f2f2",
+	top:65
+	
+	});
+	scrollWindow.add(scrollView);
+	navWindow.add(scrollWindow);
+	scrollWindow.open();
+	navWindow.open();
+});
+
+openButton.add(textGal);
+mainWindow.add(openButton);

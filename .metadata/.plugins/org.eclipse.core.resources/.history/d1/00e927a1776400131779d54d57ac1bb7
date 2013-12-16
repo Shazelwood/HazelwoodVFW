@@ -1,0 +1,76 @@
+var openButton = Ti.UI.createView({
+	backgroundColor: "ffffff"
+	borderColor: "white",
+	borderRadius: 20,
+	borderWidth: 1,
+	height: 100,
+	right: 5,
+	left: 5
+});
+var textGal = Ti.UI.createLabel({
+	text: "Open Gallery",
+	color: "red"
+});
+var lv = "lv.png";
+var scrollView = Ti.UI.createScrollView({
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	contentWidth: 315
+});
+var scrollWindow = Ti.UI.createWindow({
+	title: "Billionaire Gallery",
+	backgroundColor: "#f2f2f2",
+	});
+
+
+openButton.addEventListener("click", function(){
+	var navWindow = Ti.UI.iOS.createNavigationWindow({
+		backgroundColor: "f2f2f2",
+		backgroundImage: "http://3.bp.blogspot.com/-JTEFroV44FA/T4yXIQYRlXI/AAAAAAAATfs/KV8Wguj7nkY/s400/louis-vuitton.jpg", 
+		window: scrollWindow
+	});
+	
+	var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Money");
+	var folderContents = gallery.getDirectoryListing();
+
+	var numberOfViews = folderContents.length;
+
+	for(var i = 0; i < numberOfViews; i++){
+		var newView = Ti.UI.createView({
+			title: "Billionaire Gallery",
+			backgroundColor: "#333",
+			width: 100,
+			height: 100,
+			top: 5,
+			left: 5,
+		});
+		var pictures = Ti.UI.createImageView({
+			image: "Money/" + folderContents[i],
+			width: 150
+		});
+		newView.add(pictures);
+		scrollView.add(newView);
+		
+		newView.addEventListener("click", function(e){
+			var imageView = Ti.UI.createImageView({
+				backgroundColor: "#fff",
+				image: e.source.image
+				
+			});
+			var imageWindow = Ti.UI.createWindow({
+				title: e.source.image
+				});
+				imageWindow.add(imageView);
+			navWindow.openWindow(imageWindow, {animate: true});
+		});
+
+	};
+	scrollWindow.add(scrollView);
+	navWindow.add(scrollWindow);
+	mainWindow.close();
+	scrollWindow.open();
+	navWindow.open();
+});
+
+openButton.add(textGal);
+mainWindow.add(openButton);
