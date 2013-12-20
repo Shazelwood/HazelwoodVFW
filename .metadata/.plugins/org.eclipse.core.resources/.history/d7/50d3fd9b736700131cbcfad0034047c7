@@ -1,0 +1,34 @@
+var currentWin = Ti.UI.currentWindow;
+
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+var newButton = Ti.UI.createView({
+	backgroundColor: "#818181",
+	height: 100,
+	width: 100,
+	bottom: 20
+});
+var imageView = Ti.UI.createView({
+	top: 50,
+	bottom: 150
+});
+
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Gallery");
+var folderContents = gallery.getDirectoryListing();
+
+var image = Ti.UI.createImageView({
+			image: "Gallery/" + folderContents[0]
+		});
+newButton.addEventListener("click", function(){
+	
+	var a = (Math.random() * 10);
+	var b = Math.ceil(a);
+	alert(b);
+	//image.image = "Gallery/" + folderContents[(Math.floor(j))];
+	});
+imageView.add(image);
+currentWin.add(newButton);
+currentWin.add(imageView);
+currentWin.add(windowLabel);

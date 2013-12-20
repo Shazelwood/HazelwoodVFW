@@ -1,0 +1,140 @@
+var currentWin = Ti.UI.currentWindow;
+
+/*var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});*/
+
+var myData = {
+	"Hip Hop/R&B": {
+		"headerTitle": "Hip Hop/R&B",
+		"footerTitle": "Hip hop/R&B on the BillBoards",
+		"rowData": [
+			{artist: "Eminem ft. Rihanna", song: "The Monster", spot: "1", image: "Pictures/Rap/eminem.jpg", wiews: 8866941},
+			{artist: "Drake ft. Majid Jordan", song: "Hold on, We're Going Home'", spot: "2",image: "Pictures/Rap/drake.jpg", wiews:31163421},
+			{artist: "Macklemore & Ryan Lewis ft ScHoolboy Q & Hollis", song: "White Walls", spot: "3",image: "Pictures/Rap/mack.png", wiews:13834769},
+			{artist: "Mike Will Made-it ft. Miley Cyrus, Wiz Khalifa & Juicy J",song:"23",spot:"4",image: "Pictures/Rap/mike.jpg", wiews:128805372},
+			{artist: "Jay Z ft. Justin Timberlake", song:"Holy Grail", spot:"5",image: "Pictures/Rap/jay-z.jpg", wiews:57984621},
+		]
+	},
+	"Country": {
+		"headerTitle": "Country",
+		"footerTitle": "Country on the Billboards",
+		"rowData": [
+			{artist: "Florida Georgia Line ", song:"Stay", spot:"1",image: "Pictures/Country/floridageorgialine.jpg", wiews:5708904},
+			{artist: "Luke Bryan", song:"Drink A Beer", spot:"2",image: "Pictures/Country/luke.jpg", wiews:2324161},
+			{artist: "Eli Young Band", song:"Drunk Last Night", spot:"3",image: "Pictures/Country/eliband.jpg", wiews:2014988},
+			{artist: "Keith Urban And Miranda Lambert", song:"We Were Us", spot:"4",image: "Pictures/Country/keith.jpg", wiews:1146273},
+			{artist: "Parmalee", song:"Carilna", spot:"5",image: "Pictures/Country/parmalee.jpg", wiews:1551169},
+		]
+	},
+	"Pop": {
+		"headerTitle": "Pop",
+		"footerTitle": "Pop on the Billboards",
+		"rowData": [
+			{artist: "Eminem ft. Rihanna", song:"The Monster", spot:"1",image: "Pictures/Pop/em.jpg",views: 8866941},
+			{artist: "Imagine Dragons", song:"Demons", spot:"2",image: "Pictures/Pop/imaginedragons.jpg",views:34405179},
+			{artist: "OneRepublic", song:"Counting Stars", spot:"3",image: "Pictures/Pop/one.png",views:93683557},
+			{artist: "Avicii", song:"Wake Me UP", spot:"4",image: "Pictures/Pop/avicii.jpg",views:346319658},
+			{artist: "Miley Cyrus", song:"Wrecking Ball", spot:"5",image: "Pictures/Pop/miley.jpg",views:414968313},
+		]
+	},
+	"Rock": {
+		"headerTitle": "Rock",
+		"footerTitle": "Rock on the Billboards",
+		"rowData": [
+			{artist: "Lorde", song:"Royals", spot:"1",image: "Pictures/Rock/lorde.jpg",views:115491613},
+			{artist: "Imagine Dragons", song:"Demons", spot:"2",image: "Pictures/Rock/imaginedragons.jpg",views:34405179},
+			{artist: "Passenger", song:"Let Her Go", spot:"3",image: "Pictures/Rock/passenger.png",views:154995373},
+			{artist: "The Neighborhood", song:"Sweater Weather", spot:"4",image: "Pictures/Rock/neighbourhood.jpg",views:14021579},
+			{artist: "Imagine Dragons", song:"Radioactive", spot:"5",image: "Pictures/Rock/imaginedragons2.png",views:110700555},
+		]
+	},
+};
+var table = Titanium.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+	
+});
+
+	
+
+
+var theSections = [];
+
+for(var n in myData){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: myData[n].headerTitle,
+		footerTitle: myData[n].footerTitle
+	});
+	for ( var i = 0, j = myData[n].rowData.length; i < j ; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title: myData[n].rowData[i].spot + ". " + myData[n].rowData[i].artist,
+		image: myData[n].rowData[i].image,
+		hasChild: true
+	});
+	
+	
+	tableSection.add(theRow);
+	
+	};
+	theSections.push(tableSection);
+	
+};
+
+table.addEventListener("click", function(event){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "e0d1bf",
+		title: event.source.title
+		});
+	//var win = Ti.UI.createView();
+	var pic =  Ti.UI.createImageView({
+		height: 200,
+		top: 20,
+  		image: event.source.image
+ 		});
+ 	var scrollView = Ti.UI.createScrollView({
+		layout: "horizontal",
+		top: 300,
+		height: 100,
+		width: Ti.UI.FILL,
+		contentWidth: Ti.Platform.displayCaps.platformWidth
+	});
+  	var numberOfViews = 10;
+	for(var n in myData){
+		for(var i = 0; i < myData[n].rowData[i].length; i++){
+			if(myData[n].rowData[i].views<=1000000)
+			{
+				pic.image = "";
+			}
+			else if(myData[n].rowData[i].views>=1000000 && myData[n].rowData[i].views<10000000 ){
+				pic.image = "";
+			}
+			else if(myData[n].rowData[i].views>=10000000 && myData[n].rowData[i].views<50000000){
+				pic.image = "";
+			}
+			else if(myData[n].rowData[i].views>=50000000 && myData[n].rowData[i].views<100000000){
+				pic.image = "";
+			}
+			else if(myData[n].rowData[i].views>=100000000 && myData[n].rowData[i].views<500000000){
+				pic.image = "";
+			}
+			var record = Ti.UI.createView({
+				title: "Billionaire Gallery",
+				backgroundColor: 'red',
+				top: 5,
+				left: 5,
+				height: 10,
+				width: 10,
+			});
+			scrollView.add(record);
+		};
+	
+	};
+	detailWindow.add(scrollView);
+	detailWindow.add(pic);
+	currentWin.nav.openWindow(detailWindow, {animate: true});
+});
+
+table.setData(theSections);
+currentWin.add(table);
+//currentWin.add(windowLabel);

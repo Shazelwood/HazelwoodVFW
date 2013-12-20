@@ -1,0 +1,57 @@
+var currentWin = Ti.UI.currentWindow;
+
+var view1 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#00c009",
+	height: 50,
+	width: 50,
+	top: 20
+});
+var view2 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#008806",
+	height: 50,
+	width: 50,
+	top: view1.bottom + 5
+});
+var view3 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#005804",
+	height: 50,
+	width: 50,
+	top: view2.bottom + 5
+});
+var view4 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#003202",
+	height: 50,
+	width: 50,
+	top: view3.bottom + 5
+});
+var label1 = Ti.UI.createLabel({
+	text: "1",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var button = Ti.UI.createView({
+	backgroundColor: "black",
+	height: 50,
+	widht: 50,
+	top: view4.bottom + 5
+});
+
+button.addEventListener("click", function(){
+	var animation = Ti.UI.createAnimation();
+	animation.width = 200;
+	animation.duration = 5000;
+	
+	view1.animate(animation);
+
+});
+view1.add(label1);
+currentWin.add(button);
+currentWin.add(view1);
+currentWin.add(view2);
+currentWin.add(view3);
+currentWin.add(view4);

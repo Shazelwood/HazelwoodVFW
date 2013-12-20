@@ -1,33 +1,38 @@
-Logger started at: Friday, December 6, 2013 11:36:45 PM EST
+Logger started at: Wednesday, December 18, 2013 10:45:31 PM EST
 Component: com.appcelerator.titanium.mobile
 Version: 1.0.0.1379026748
-[36:45.813] Sent: >21*1386391005812*version<
-[36:45.814] Recv: >1386391005812*2*3.1.3.GA<
-[36:45.827] Sent: >36*1386391005813*option*monitorXHR*true<
-[36:45.827] Recv: >1386391005813<
-[36:45.827] Sent: >45*1386391005814*option*stepFiltersEnabled*false<
-[36:45.828] Recv: >1386391005814<
-[36:45.828] Sent: >45*1386391005815*option*suspendOnFirstLine*false<
-[36:45.828] Recv: >1386391005815<
-[36:45.829] Sent: >46*1386391005816*option*suspendOnExceptions*false<
-[36:45.829] Recv: >1386391005816<
-[36:45.829] Sent: >41*1386391005817*option*suspendOnErrors*true<
-[36:45.829] Recv: >1386391005817<
-[36:45.829] Sent: >43*1386391005818*option*suspendOnKeywords*true<
-[36:45.830] Recv: >1386391005818<
-[36:45.830] Sent: >45*1386391005819*option*bypassConstructors*false<
-[36:45.830] Recv: >1386391005819<
-[36:45.830] Sent: >45*1386391005820*option*stepFiltersEnabled*false<
-[36:45.831] Recv: >1386391005820<
-[36:45.831] Sent: >30*1386391005821*detailFormatters<
-[36:45.831] Recv: >1386391005821<
-[36:45.831] Sent: >20*1386391005822*enable<
-[36:45.831] Recv: >1386391005822<
-[36:45.833] Recv: >threads*created*0*kroll$1<
-[36:45.834] Recv: >log*out*[DEBUG] Analytics is enabled = YES<
-[36:45.838] Recv: >log*out*[DEBUG] Loading: /Users/Hazelwood/Library/Application Support/iPhone Simulator/7.0/Applications/2A40EDEA-F6EB-4F7B-AFA8-839DAA24835D/Project 2.app/app.js, Resource: app_js<
-[36:45.838] Recv: >scripts*created*317774400|app:/app.js||1|79<
-[36:45.839] Recv: >resumed*0*started<
-[36:45.905] Recv: >log*out*[INFO] /Users/Hazelwood/Library/Application Support/iPhone Simulator/7.0/Applications/2A40EDEA-F6EB-4F7B-AFA8-839DAA24835D/Documents/Billionaires.json<
-[36:45.917] Recv: >log*out*[DEBUG] Application booted in 140.646040 ms<
+[45:31.597] Sent: >21*1387424731597*version<
+[45:31.598] Recv: >1387424731597*2*3.1.3.GA<
+[45:31.641] Sent: >36*1387424731598*option*monitorXHR*true<
+[45:31.642] Recv: >1387424731598<
+[45:31.642] Sent: >45*1387424731599*option*stepFiltersEnabled*false<
+[45:31.642] Recv: >1387424731599<
+[45:31.642] Sent: >45*1387424731600*option*suspendOnFirstLine*false<
+[45:31.643] Recv: >1387424731600<
+[45:31.643] Sent: >46*1387424731601*option*suspendOnExceptions*false<
+[45:31.643] Recv: >1387424731601<
+[45:31.643] Sent: >41*1387424731602*option*suspendOnErrors*true<
+[45:31.644] Recv: >1387424731602<
+[45:31.644] Sent: >43*1387424731603*option*suspendOnKeywords*true<
+[45:31.644] Recv: >1387424731603<
+[45:31.644] Sent: >45*1387424731604*option*bypassConstructors*false<
+[45:31.644] Recv: >1387424731604<
+[45:31.644] Sent: >45*1387424731605*option*stepFiltersEnabled*false<
+[45:31.645] Recv: >1387424731605<
+[45:31.645] Sent: >30*1387424731606*detailFormatters<
+[45:31.645] Recv: >1387424731606<
+[45:31.645] Sent: >20*1387424731607*enable<
+[45:31.646] Recv: >1387424731607<
+[45:31.647] Recv: >threads*created*0*kroll$1<
+[45:31.648] Recv: >log*out*[DEBUG] Analytics is enabled = YES<
+[45:31.649] Recv: >log*out*[DEBUG] Loading: /Users/Hazelwood/Library/Application Support/iPhone Simulator/7.0/Applications/C4FE4BFC-531A-4877-8F96-142BACB90CD7/Final Project.app/app.js, Resource: app_js<
+[45:31.650] Recv: >scripts*created*309385888|app:/app.js||1|71<
+[45:31.650] Recv: >resumed*0*started<
+[45:31.713] Recv: >log*out*[DEBUG] Application booted in 339.356005 ms<
+[45:33.335] Recv: >log*out*[WARN] OPEN ABORTED. _handleOpen returned NO<
+[45:33.335] Recv: >threads*created*1*kroll$2<
+[45:33.335] Recv: >log*out*[DEBUG] Loading: /Users/Hazelwood/Library/Application Support/iPhone Simulator/7.0/Applications/C4FE4BFC-531A-4877-8F96-142BACB90CD7/Final Project.app/listWindow.js, Resource: listWindow_js<
+[45:33.336] Recv: >scripts*created*309646176|app:/listWindow.js||1|136<
+[45:33.336] Recv: >resumed*1*started<
+[45:34.729] Recv: >log*out*[INFO] <null><
 ----------End of file----------

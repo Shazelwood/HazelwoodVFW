@@ -1,0 +1,33 @@
+var currentWin = Ti.UI.currentWindow;
+
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+var newButton = Ti.UI.createView({
+	backgroundColor: "#818181",
+	height: 100,
+	width: 100,
+	bottom: 20
+});
+var imageView = Ti.UI.createView({
+	backgroundColor: "red",
+	top: 50,
+	bottom: 150
+});
+
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Money");
+var folderContents = gallery.getDirectoryListing();
+
+var image = Ti.UI.createImageView({
+			image: "Money/" + folderContents[1]
+		});
+newButton.addEventListener("click", function(){
+	var i = 1;
+	var j = (Math.random() * 10);
+	image.image = "Money/" + folderContents[i*j];
+	});
+imageView.add(image);
+currentWin.add(newButton);
+currentWin.add(imageView);
+currentWin.add(windowLabel);

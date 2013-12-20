@@ -1,0 +1,40 @@
+var currentWin = Ti.UI.currentWindow;
+
+var view1 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "red",
+	height: 50,
+	width: 50,
+	top: 20
+});
+var view2 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "red",
+	height: 50,
+	width: 50,
+	top: view1.bottom + 20
+});
+var label1 = Ti.UI.createLabel({
+	text: "1",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var button = Ti.UI.createView({
+	backgroundColor: "black",
+	height: 50,
+	widht: 50,
+	top: 80
+});
+
+button.addEventListener("click", function(){
+	var animation = Ti.UI.createAnimation();
+	animation.width = 200;
+	animation.duration = 5000;
+	
+	view1.animate(animation);
+
+});
+view1.add(label1);
+currentWin.add(button);
+currentWin.add(view1);

@@ -736,3 +736,34 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Hazelwoo
 
 !ENTRY org.eclipse.core.jobs 2 2 2013-12-15 11:36:02.918
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-12-16 21:18:16.583 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hazelwood/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/Hazelwood/Desktop/HazelwoodVFW -keyring /Users/Hazelwood/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-16 21:18:30.244
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-16 21:22:05.710
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-16 21:22:05.710
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-16 21:26:46.877
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+
+!ENTRY org.eclipse.core.resources 4 567 2013-12-16 22:36:28.396
+!MESSAGE The project description file (.project) for 'List Views' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-18 17:20:12.472
+!MESSAGE Extension version: 3.1.3.GA; protocol v2
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-18 17:20:12.597
+!MESSAGE Extension update available: 3.1.3.GA
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-18 22:45:31.598
+!MESSAGE Extension version: 3.1.3.GA; protocol v2

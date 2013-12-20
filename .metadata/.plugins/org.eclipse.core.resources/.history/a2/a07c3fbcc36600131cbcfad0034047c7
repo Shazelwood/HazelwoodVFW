@@ -1,0 +1,24 @@
+var menu = Ti.UI.createWindow({
+	title: "Billboard Top 5",
+	backgroundColor: "#494949"
+});
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	backgroundColor:"red",
+	statusBarStyle: 3,
+	//backgroundImage: 
+	window: menu
+});
+
+var button1 = Ti.UI.createView({
+	
+});
+
+var button2 = Ti.UI.createView({
+	
+});
+
+var button3 = Ti.UI.createView({
+	
+});
+
+navWindow.open();

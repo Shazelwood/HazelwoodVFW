@@ -1,0 +1,71 @@
+var menu = Ti.UI.createWindow({
+	title: "Billboard Top 5",
+	backgroundColor: "#494949"
+});
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	backgroundImage: "Pictures/cd.jpg",
+	statusBarStyle: Titanium.UI.iPhone.statusBarStyle.TRANSLUCENT_BLACK,
+	//backgroundImage: 
+	window: menu
+});
+var view1 = Ti.UI.createView({
+	backgroundImage: "Pictures/cd.jpg",
+	layout: "horizontal"
+});
+
+var button1 = Ti.UI.createView({
+	backgroundColor: "red",
+	left: 20,
+	right:20,
+	height: 100,
+	top: 20,
+});
+
+var button2 = Ti.UI.createView({
+	backgroundColor: "blue",
+	left: 20,
+	height: 100,
+	right: 20,
+	top: 20,
+});
+
+var button3 = Ti.UI.createView({
+	backgroundColor: "green",
+	left: 20,
+	height: 100,
+	right: 20,
+	top: 20,
+});
+button1.addEventListener("click", function(){
+	var imageWindow = Ti.UI.createWindow({
+		translucent: true,
+		//backgroundColor: "#adadad",
+		title: "Image",
+		text: "Gallery",
+		url: "imageWindow.js"
+	});
+	navWindow.openWindow(imageWindow, {animate: true});
+});
+button2.addEventListener("click", function(){
+	var listWindow = Ti.UI.createWindow({
+		translucent: true,
+		title: "List",
+		text: "Information",
+		url: "listWindow.js",
+		nav: navWindow
+	});
+	navWindow.openWindow(listWindow, {animate: true});
+});
+button3.addEventListener("click", function(){
+	var lectureWindow = Ti.UI.createWindow({
+		translucent: true,		
+		text: "Research",
+		title: "Research Window",
+		url: "lectureWindow.js"
+	});
+	navWindow.openWindow(lectureWindow, {animate: true});
+});
+
+view1.add(button1, button2, button3);
+menu.add(view1);
+navWindow.open();

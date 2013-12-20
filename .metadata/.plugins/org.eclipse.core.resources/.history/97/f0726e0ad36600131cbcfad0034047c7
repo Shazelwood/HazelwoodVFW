@@ -1,0 +1,8 @@
+var currentWin = Ti.UI.currentWindow;
+
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+var list
+currentWin.add(windowLabel);

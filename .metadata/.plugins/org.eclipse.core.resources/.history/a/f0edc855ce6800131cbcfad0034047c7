@@ -1,0 +1,141 @@
+var menu = Ti.UI.createWindow({
+	title: "Billboard Top 5",
+	backgroundColor: "#494949"
+});
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	tintColor: "red",
+	backgroundImage: "Pictures/cd.jpg",
+	statusBarStyle: Titanium.UI.iPhone.statusBarStyle.LIGHT_CONTENT,
+	//backgroundImage: 
+	window: menu
+});
+var hold = Ti.UI.createView({
+	backgroundImage: "Pictures/cd.jpg",
+	layout: "vertical"
+});
+var view = Ti.UI.createView({
+	layout: "vertical"
+});
+var label1 = Ti.UI.createLabel({
+	text:"Gallery",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var label2 = Ti.UI.createLabel({
+	text:"List",
+	color: "blue",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var label3 = Ti.UI.createLabel({
+	text:"Vote",
+	color: "green",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var btn1 = Ti.UI.createView({
+	borderColor: "red",
+	borderWidth: 2,
+	right:20,
+	left:20,
+	height: 100,
+	borderRadius: 50,
+	width: 250,
+	top: 20,
+});
+
+var btn2 = Ti.UI.createView({
+	borderColor: "blue",
+	borderWidth: 2,
+	left:20,
+	height: 100,
+	width: 250,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var btn3 = Ti.UI.createView({
+	borderColor: "green",
+	borderWidth: 2,
+	left:20,
+	height: 100,
+	width: 250,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var hold1 = Ti.UI.createView({
+	backgroundColor:"black",
+	opacity: .8,
+	right: 20,
+	left:20,
+	height: 100,
+	borderRadius: 50,
+	width: 250,
+	top: 20,
+});
+
+var hold2 = Ti.UI.createView({
+	backgroundColor:"black",
+	opacity: .8,
+	left:20,
+	height: 100,
+	width: 250,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var hold3 = Ti.UI.createView({
+	backgroundColor:"black",
+	opacity: .8,
+	left:20,
+	height: 100,
+	width: 250,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+btn1.addEventListener("click", function(){
+	var imageWindow = Ti.UI.createWindow({
+		translucent: true,
+		//backgroundColor: "#adadad",
+		title: "Image",
+		text: "Gallery",
+		url: "imageWindow.js"
+	});
+	navWindow.tintColor = "red";
+	navWindow.openWindow(imageWindow, {animate: true});
+});
+btn2.addEventListener("click", function(){
+	var listWindow = Ti.UI.createWindow({
+		translucent: true,
+		title: "List",
+		text: "Information",
+		url: "listWindow.js",
+		nav: navWindow
+	});
+	navWindow.tintColor = "blue";
+	navWindow.openWindow(listWindow, {animate: true});
+});
+btn3.addEventListener("click", function(){
+	var lectureWindow = Ti.UI.createWindow({
+		translucent: true,		
+		text: "Research",
+		title: "Research Window",
+		url: "lectureWindow.js"
+	});
+	navWindow.tintColor = "green";
+	navWindow.openWindow(lectureWindow, {animate: true});
+});
+btn1.add(label1);
+btn2.add(label2);
+btn3.add(label3);
+view.add(btn1, btn2, btn3);
+hold.add(hold1, hold2, hold3);
+menu.add(hold);
+menu.add(view);
+navWindow.open();

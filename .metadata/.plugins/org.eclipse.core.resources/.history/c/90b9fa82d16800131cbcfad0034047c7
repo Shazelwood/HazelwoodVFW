@@ -1,0 +1,36 @@
+var currentWin = Ti.UI.currentWindow;
+
+var myButton = Titanium.UI.createButton({
+    title:"click",
+    width:100,
+    height:48,
+    bottom:20
+});
+ 
+var myImage = Titanium.UI.createImageView({
+    image:"Pictures/record.png",
+    top:20,
+    width:100,
+    height:100,
+    borderRadius: 50
+ 
+});
+ 
+myButton.addEventListener("click",function(e){
+ 
+    var t = Titanium.UI.create2DMatrix();
+        t=t.rotate(360);
+        //t=t.scale(1.2);
+ 
+ 
+    var anim = Titanium.UI.createAnimation({
+        top:20,
+        duration:5000,
+        transform:t
+    });
+ 
+    myImage.animate(anim);
+ 
+});
+currentWin.add(myButton);
+currentWin.add(myImage); 

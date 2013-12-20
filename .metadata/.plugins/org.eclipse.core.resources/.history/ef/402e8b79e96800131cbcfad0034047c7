@@ -1,0 +1,61 @@
+var currentWin = Ti.UI.currentWindow;
+var currentView = Ti.UI.createView({
+	opacity: .5,
+	backgroundColor: "#5a0000"
+});
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+var newButton = Ti.UI.createView({
+	backgroundColor: "black",
+	opacity: .5,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	bottom: 20
+});
+var textHolder = Ti.UI.createView({
+	borderColor: "red",
+	borderRadius: 50,
+	height: 100,
+	width: 100,
+	bottom: 20
+});
+var text = Ti.UI.createLabel({
+	text: "Click Me",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var imageView = Ti.UI.createView({
+	top: 50,
+	bottom: 150
+});
+
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Gallery");
+var folderContents = gallery.getDirectoryListing();
+
+var image = Ti.UI.createImageView({
+			image: "Gallery/" + folderContents[0]
+		});
+function generateRandomRangeSet(beg, end) {
+	var pic = []; // Create an array in range [beg, end].
+  	for (var i=beg; i<=end; i++) { pic.push(i); }
+  		return function() {
+    		if (pic.length < 1) {
+    			throw new Error('no more pic'); 
+    			}
+    		var i=Math.floor(Math.random()*pic.length), pics=pic[i];
+    		pic.splice(i, 1); // Return and remove a random element of the array.
+    		return pics;
+  };
+};
+textHolder.addEventListener("click", generateRandomRangeSet );
+
+currentWin.add(currentView);
+imageView.add(image);
+currentWin.add(newButton);
+textHolder.add(text);
+currentWin.add(textHolder);
+currentWin.add(imageView);
+currentWin.add(windowLabel);

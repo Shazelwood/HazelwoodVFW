@@ -1,0 +1,96 @@
+var currentWin = Ti.UI.currentWindow;
+
+var mainView = Ti.UI.createView({
+	layout: "vertical"
+});
+
+var view1 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#00c009",
+	height: 60,
+	width: 50,
+	top: 20
+});
+var view2 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#008806",
+	height: 60,
+	width: 50,
+	top: 10
+});
+var view3 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#005804",
+	height: 60,
+	width: 50,
+	top: 10
+});
+var view4 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#003202",
+	height: 60,
+	width: 50,
+	top: 10
+});
+var label1 = Ti.UI.createLabel({
+	text: "Hip/Hop",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label2 = Ti.UI.createLabel({
+	text: "Pop",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label3 = Ti.UI.createLabel({
+	text: "Country",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label4 = Ti.UI.createLabel({
+	text: "Rock",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var button = Ti.UI.createView({
+	backgroundColor: "black",
+	height: 50,
+	widht: 50,
+	top: view4.bottom + 5
+});
+
+button.addEventListener("click", function(e){
+	var a1 = Ti.UI.createAnimation();
+	var change = Ti.UI.createAnimation();
+	a1.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a1.duration = 5000;
+	change.text = a1.width;
+	label1.animate(change);
+	view1.animate(a1);
+	var a2 = Ti.UI.createAnimation();
+	a2.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a2.duration = 5000;
+	view2.animate(a2);
+	var a3 = Ti.UI.createAnimation();
+	a3.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a3.duration = 5000;
+	view3.animate(a3);
+	var a4 = Ti.UI.createAnimation();
+	a4.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a4.duration = 5000;
+	view4.animate(a4);
+
+});
+
+
+view1.add(label1);
+view2.add(label2);
+view3.add(label3);
+view4.add(label4);
+mainView.add(button);
+mainView.add(view1);
+mainView.add(view2);
+mainView.add(view3);
+mainView.add(view4);
+currentWin.add(mainView);

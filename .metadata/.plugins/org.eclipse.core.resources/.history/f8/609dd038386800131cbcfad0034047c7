@@ -1,0 +1,24 @@
+var win = Ti.UI.createWindow({
+	title:"Main Window",
+	backgroundColor: "#adadad"
+});
+
+var view = Titanium.UI.createView({
+  backgroundColor:'red'
+});
+
+var animation = Titanium.UI.createAnimation();
+animation.backgroundColor = 'black';
+animation.duration = 1000;
+
+var nextanimation = function() {
+  animation.removeEventListener('complete',nextanimation);
+  animation.backgroundColor = 'orange';
+  view.animate(animation);
+};
+
+animation.addEventListener('complete',nextanimation);
+view.animate(animation);
+
+win.add(view);
+win.open();

@@ -1,0 +1,61 @@
+var currentWin = Ti.UI.currentWindow;
+var currentView = Ti.UI.createView({
+	opacity: .5,
+	backgroundColor: "#5a0000"
+});
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+var newButton = Ti.UI.createView({
+	backgroundColor: "black",
+	opacity: .5,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	bottom: 20
+});
+var textHolder = Ti.UI.createView({
+	borderColor: "red",
+	borderRadius: 50,
+	height: 100,
+	width: 100,
+	bottom: 20
+});
+var text = Ti.UI.createLabel({
+	text: "Click Me",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var imageView = Ti.UI.createView({
+	top: 50,
+	bottom: 150
+});
+
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "Gallery");
+var folderContents = gallery.getDirectoryListing();
+
+var image = Ti.UI.createImageView({
+			image: "Gallery/" + folderContents[0]
+		});
+textHolder.addEventListener("click", function(){
+	min = 0;
+	max = 17;
+	function shuffle(o) {
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
+
+var random = shuffle(image);
+	image.image = "Gallery/" + folderContents[(Math.floor(Math.random() * (max - min) + min ))];
+		
+
+	});
+
+currentWin.add(currentView);
+imageView.add(image);
+currentWin.add(newButton);
+textHolder.add(text);
+currentWin.add(textHolder);
+currentWin.add(imageView);
+currentWin.add(windowLabel);

@@ -1,0 +1,104 @@
+var currentWin = Ti.UI.currentWindow;
+
+var windowLabel= Ti.UI.createLabel({
+	text: currentWin.text,
+	color: "black"
+});
+
+var myData = {
+	"Hip Hop/R&B": {
+		"headerTitle": "Hip Hop/R&B",
+		"footerTitle": "Hip hop/R&B on the BillBoards",
+		"rowData": [
+			{artist: "Eminem ft. Rihanna", song: "The Monster", spot: "1", image: ""},
+			{artist: "Drake ft. Majid Jordan", song: "Hold on, We're Going Home'", spot: "2",image: ""},
+			{artist: "Macklemore & Ryan Lewis ft ScHoolboy Q & Hollis", song: "White Walls", spot: "3",image: ""},
+			{artist: "Mike Will Made-it ft. Miley Cyrus, Wiz Khalifa & Juicy J",song:"23",spot:"4",image: ""},
+			{artist: "Jay Z Featuring Justin Timberlake", song:"Holy Grail", spot:"5",image: ""},
+		]
+	},
+	"Country": {
+		"headerTitle": "Country",
+		"footerTitle": "Country on the Billboards",
+		"rowData": [
+			{artist: "Florida Georgia Line ", song:"Stay", spot:"1",image: ""},
+			{artist: "Luke Bryan", song:"Drink A Beer", spot:"2",image: ""},
+			{artist: "Eli Young Band", song:"Drunk Last Night", spot:"3",image: ""},
+			{artist: "Keith Urban And Miranda Lambert", song:"We Were Us", spot:"4",image: ""},
+			{artist: "Parmalee", song:"Carilna", spot:"5",image: ""},
+		]
+	},
+	"Pop": {
+		"headerTitle": "Pop",
+		"footerTitle": "Pop on the Billboards",
+		"rowData": [
+			{artist: "Eminem Featuring Rihanna", song:"The Monster", spot:"1",image: ""},
+			{artist: "Imagine Dragons", song:"Demons", spot:"2",image: ""},
+			{artist: "OneRepublic", song:"Counting Stars", spot:"3",image: ""},
+			{artist: "Avicii", song:"Wake Me UP", spot:"4",image: ""},
+			{artist: "Miley Cyrus", song:"Wrecking Ball", spot:"5",image: ""},
+		]
+	},
+	"Rock": {
+		"headerTitle": "Rock",
+		"footerTitle": "Rock on the Billboards",
+		"rowData": [
+			{artist: "Lorde", song:"Royals", spot:"1",image: ""},
+			{artist: "Imagine Dragons", song:"Demons", spot:"2",image: ""},
+			{artist: "Passenger", song:"Let Her Go", spot:"3",image: ""},
+			{artist: "The Neighborhood", song:"Sweater Weather", spot:"4",image: ""},
+			{artist: "Imagine Dragons", song:"Radioactive", spot:"5",image: ""},
+		]
+	},
+};
+var table = Titanium.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+	
+});
+
+	
+
+
+var theSections = [];
+
+for(var n in myData){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: myData[n].headerTitle,
+		footerTitle: myData[n].footerTitle
+	});
+	for ( var i = 0, j = myData[n].rowData.length; i < j ; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title: myData[n].rowData[i].spot + ". " + myData[n].rowData[i].artist,
+		hasChild: true
+	});
+	
+	
+	tableSection.add(theRow);
+	
+	};
+	theSections.push(tableSection);
+	
+}
+
+table.addEventListener("click", function(event){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "e0d1bf",
+		barColor: "e9a555",
+		title: event.source.title
+		});
+	//var win = Ti.UI.createView();
+	var pic =  Ti.UI.createImageView({
+		height: 200,
+		top: 20,
+  		image: event.source.image
+ 		});
+  	
+	detailWindow.add(pic);
+	navWindow.openWindow(detailWindow, {animate: true});
+	
+});
+
+
+table.setData(theSections);
+currentWin.add(table);
+currentWin.add(windowLabel);

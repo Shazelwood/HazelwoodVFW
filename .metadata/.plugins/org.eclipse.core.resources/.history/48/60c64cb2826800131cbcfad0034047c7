@@ -1,0 +1,136 @@
+var menu = Ti.UI.createWindow({
+	title: "Billboard Top 5",
+	backgroundColor: "#494949"
+});
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	tintColor: "red",
+	backgroundImage: "Pictures/cd.jpg",
+	statusBarStyle: Titanium.UI.iPhone.statusBarStyle.LIGHT_CONTENT,
+	//backgroundImage: 
+	window: menu
+});
+var view1 = Ti.UI.createView({
+	backgroundImage: "Pictures/cd.jpg",
+	layout: "vertical"
+});
+var holder = Ti.UI.createView({
+	layout: "vertical"
+});
+var label1 = Ti.UI.createLabel({
+	text:"Gallery",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var label2 = Ti.UI.createLabel({
+	text:"List",
+	color: "blue",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var label3 = Ti.UI.createLabel({
+	text:"Random",
+	color: "green",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var holder1 = Ti.UI.createView({
+	borderColor: "black",
+	right:20,
+	height: 100,
+	borderRadius: 50,
+	width: 100,
+	top: 20,
+});
+
+var holder2 = Ti.UI.createView({
+	borderColor: "black",
+	right: 20,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var holder3 = Ti.UI.createView({
+	borderColor: "black",
+	right: 20,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var button1 = Ti.UI.createView({
+	borderColor: "red",
+	borderWidth: 2,
+	right:20,
+	height: 100,
+	borderRadius: 50,
+	width: 100,
+	top: 20,
+});
+
+var button2 = Ti.UI.createView({
+	borderColor: "blue",
+	borderWidth: 2,
+	right: 20,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+
+var button3 = Ti.UI.createView({
+	borderColor: "green",
+	borderWidth: 2,
+	right: 20,
+	height: 100,
+	width: 100,
+	borderRadius: 50,
+	right: 20,
+	top: 20,
+});
+holder1.addEventListener("click", function(){
+	var imageWindow = Ti.UI.createWindow({
+		translucent: true,
+		//backgroundColor: "#adadad",
+		title: "Image",
+		text: "Gallery",
+		url: "imageWindow.js"
+	});
+	navWindow.tintColor = "red";
+	navWindow.openWindow(imageWindow, {animate: true});
+});
+holder2.addEventListener("click", function(){
+	var listWindow = Ti.UI.createWindow({
+		translucent: true,
+		title: "List",
+		text: "Information",
+		url: "listWindow.js",
+		nav: navWindow
+	});
+	navWindow.tintColor = "blue";
+	navWindow.openWindow(listWindow, {animate: true});
+});
+holder3.addEventListener("click", function(){
+	var lectureWindow = Ti.UI.createWindow({
+		translucent: true,		
+		text: "Research",
+		title: "Research Window",
+		url: "lectureWindow.js"
+	});
+	navWindow.tintColor = "green";
+	navWindow.openWindow(lectureWindow, {animate: true});
+});
+holder1.add(label1);
+holder2.add(label2);
+holder3.add(label3);
+holder.add(holder1, holder2, holder3);
+view1.add(button1, button2, button3);
+menu.add(view1);
+menu.add(holder);
+navWindow.open();

@@ -1,0 +1,165 @@
+var currentWin = Ti.UI.currentWindow;
+var colorView = Ti.UI.createView({
+	backgroundColor: "red",
+});
+var mainView = Ti.UI.createView({
+	layout: "vertical"
+});
+var label = Ti.UI.createLabel({
+	text: "Click for Fan Favorites",
+	font: {fontSize: 20, font: "arial"},
+	color: "#bcffba"
+});
+
+var view1 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#ffc3f9",
+	height: 30,
+	width: 50,
+	top: 5
+});
+var view2 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#c3c6ff",
+	height: 30,
+	width: 50,
+	top: 5
+});
+var view3 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#c3feff",
+	height: 30,
+	width: 50,
+	top: 5
+});
+var view4 = Ti.UI.createView({
+	right: 10,
+	backgroundColor: "#ffe2c3",
+	height: 30,
+	width: 50,
+	top: 5
+});
+
+var label1 = Ti.UI.createLabel({
+	text: "Hip/Hop",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label2 = Ti.UI.createLabel({
+	text: "Pop",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label3 = Ti.UI.createLabel({
+	text: "Country",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+var label4 = Ti.UI.createLabel({
+	text: "Rock",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+});
+
+var titleView1 = Ti.UI.createView({
+	top: 10,
+	right: 10,
+	height: 30,
+	width: 300,
+	backgroundColor: "black"
+});
+var titleView2 = Ti.UI.createView({
+	top: 10,
+	right: 10,
+	height: 30,
+	width: 300,
+	backgroundColor: "black"
+});
+var titleView3 = Ti.UI.createView({
+	top: 10,
+	right: 10,
+	height: 30,
+	width: 300,
+	backgroundColor: "black"
+});
+var titleView4 = Ti.UI.createView({
+	top: 10,
+	right: 10,
+	height: 30,
+	width: 300,
+	backgroundColor: "black"
+});
+
+var number1 = Ti.UI.createLabel({
+	text: "",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+	
+});
+var number2 = Ti.UI.createLabel({
+	text: "",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+	
+});
+var number3 = Ti.UI.createLabel({
+	text: "",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+	
+});
+var number4 = Ti.UI.createLabel({
+	text: "",
+	color: "red",
+	font: font = { fontSize: 24, font: "AppleSDGothicNeo-Light" }
+	
+});
+
+var button = Ti.UI.createView({
+	backgroundColor: "black",
+	height: 50,
+	widht: 50,
+	top: view4.bottom + 5
+});
+
+button.addEventListener("click", function(e){
+	var a1 = Ti.UI.createAnimation();
+	a1.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a1.duration = 5000;
+	number1.text = a1.width;
+	view1.animate(a1);
+	var a2 = Ti.UI.createAnimation();
+	a2.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a2.duration = 5000;
+	view2.animate(a2);
+	var a3 = Ti.UI.createAnimation();
+	a3.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a3.duration = 5000;
+	view3.animate(a3);
+	var a4 = Ti.UI.createAnimation();
+	a4.width = (Math.floor(Math.random() * (300 - 50) + 50 ));
+	a4.duration = 5000;
+	view4.animate(a4);
+
+});
+currentWin.add(colorView);
+button.add(label);
+view1.add(number1);
+view2.add(number2);
+view3.add(number3);
+view4.add(number4);
+titleView1.add(label1);
+titleView2.add(label2);
+titleView3.add(label3);
+titleView4.add(label4);
+mainView.add(button);
+mainView.add(titleView1);
+mainView.add(view1);
+mainView.add(titleView2);
+mainView.add(view2);
+mainView.add(titleView3);
+mainView.add(view3);
+mainView.add(titleView4);
+mainView.add(view4);
+currentWin.add(mainView);
+
